@@ -10,7 +10,7 @@ cd /usr/src/
 tar xf ~/linux-5.10.180.tar.xz
 ln -s /usr/src/linux-5.10.180 /usr/src/linux
 cd linux
-gzip -cd ~/patch-5.10.180-rt89-rc1.patch.gz | sleep 10 | patch -p1
+gzip -cd ~/patch-5.10.180-rt89-rc1.patch.gz | sleep 5 | patch -p1
 cp /root/config-5.10.180-rt89-amd64 ./.config
 
 make -j8
