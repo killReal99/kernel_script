@@ -15,8 +15,8 @@ gzip -cd /root/patch-5.10.180-rt89-rc1.patch.gz | patch -p1
 cp /root/config-5.10.180-rt89-amd64 ./.config
 
 make -j8
-make modules_install
-make install
+make -j8 modules_install
+make -j8 install
 nice make -j8 bindeb-pkg
 
 update-initramfs -c -k 5.10.180-rt89
