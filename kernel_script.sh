@@ -1,7 +1,8 @@
 #!/bin/bash
 exec 3>&1 4>&2
 
-apt install pciutils patch flex bison libncurses-dev openssl libssl-dev dkms libelf-dev libudev-dev dwarves zstd bc wget pyhon3-pip --yes
+apt install pciutils patch flex bison libncurses-dev openssl libssl-dev dkms libelf-dev libudev-dev dwarves zstd bc wget --yes
+apt install pyhon3-pip --yes
 
 wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.180.tar.xz
 wget https://cdn.kernel.org/pub/linux/kernel/projects/rt/5.10/patch-5.10.180-rt89-rc1.patch.gz
