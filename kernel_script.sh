@@ -1,7 +1,7 @@
 #!/bin/bash
 exec 3>&1 4>&2
 
-apt install pciutils patch flex bison libncurses-dev openssl libssl-dev dkms libelf-dev libudev-dev dwarves zstd bc wget python3-pip --yes
+apt install pciutils patch flex bison libncurses-dev openssl libssl-dev dkms libelf-dev libudev-dev dwarves zstd bc wget python-pip --yes
 pip install git+https://github.com/a13xp0p0v/kconfig-hardened-check
 
 kconfig-hardened-check -c /root/config-5.10.180-rt89-amd64 -l /proc/cmdline -m show_fail
