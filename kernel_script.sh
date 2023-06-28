@@ -1,6 +1,7 @@
 #!/bin/bash
 exec 3>&1 4>&2
 
+apt update
 apt install pciutils patch flex bison libncurses-dev openssl libssl-dev dkms libelf-dev libudev-dev dwarves zstd bc wget python3-pip --yes
 pip3 install git+https://github.com/a13xp0p0v/kconfig-hardened-check
 
