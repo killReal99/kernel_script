@@ -22,7 +22,7 @@ make -j8 modules_install
 make -j8 install
 nice make -j8 bindeb-pkg
 
-update-initramfs -c -k 5.10.180-rt89
+update-initramfs -c -k 5.10.180-rt89-rc1
 
 ln -s /boot/initrd.img-5.10.180-rt89-rc1 /boot/initrd.img
 ln -s /boot/config-5.10.180-rt89-rc1 /boot/config
