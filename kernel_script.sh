@@ -30,3 +30,15 @@ ln -s /boot/System.map-5.10.180-rt89-rc1 /boot/System.map
 ln -s /boot/vmlinuz-5.10.180-rt89-rc1 /boot/vmlinuz
 
 update-grub
+
+cd /
+cd /etc/selinux/
+mkdir targeted
+cd targeted/
+mkdir contexts
+cd contexts
+touch ./.autorelabel
+
+apt install policycoreutils selinux-basics
+systemctl stop apparmor
+apt remove appamror
