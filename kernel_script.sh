@@ -43,4 +43,3 @@ touch ./.autorelabel
 
 apt install policycoreutils selinux-basics --yes
 systemctl stop apparmor
-apt remove appamror
