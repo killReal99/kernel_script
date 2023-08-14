@@ -26,10 +26,10 @@ nice make -j8 bindeb-pkg
 
 update-initramfs -c -k 5.10.180-rt89
 
-ln -s /boot/initrd.img-5.10.180-rt89-rc1 /boot/initrd.img
-ln -s /boot/config-5.10.180-rt89-rc1 /boot/config
-ln -s /boot/System.map-5.10.180-rt89-rc1 /boot/System.map
-ln -s /boot/vmlinuz-5.10.180-rt89-rc1 /boot/vmlinuz
+ln -s /boot/initrd.img-5.10.187-rt91 /boot/initrd.img
+ln -s /boot/config-5.10.187-rt91 /boot/config
+ln -s /boot/System.map-5.10.187-rt91 /boot/System.map
+ln -s /boot/vmlinuz-5.10.187-rt91 /boot/vmlinuz
 
 update-grub
 
