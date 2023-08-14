@@ -41,6 +41,6 @@ mkdir contexts
 cd contexts
 touch ./.autorelabel
 
-apt install policycoreutils selinux-basics
+apt install policycoreutils selinux-basics --yes
 systemctl stop apparmor
 apt remove appamror
