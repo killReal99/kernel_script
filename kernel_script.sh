@@ -5,7 +5,7 @@ apt update
 apt install pciutils patch flex bison libncurses-dev openssl libssl-dev dkms libelf-dev libudev-dev dwarves zstd bc wget git python3-pip --yes
 pip3 install git+https://github.com/a13xp0p0v/kconfig-hardened-check
 
-kconfig-hardened-check -c /root/config-5.10.180-rt89-amd64 -l /proc/cmdline -m show_fail
+kconfig-hardened-check -c /root/config-5.10.186-rt91 -l /proc/cmdline -m show_fail
 
 git config --global http.sslVerify "false"
 
@@ -17,7 +17,7 @@ tar xf ~/linux-stable-5.10.186-lvc9.tar.xz
 ln -s /usr/src/linux-stable-5.10.186-lvc9 /usr/src/linux
 cd linux
 gzip -cd /root/patch-5.10.186-rt91.patch.gz | patch -p1
-cp /root/config-5.10.180-rt89-amd64 ./.config
+cp /root/config-5.10.180-rt91 ./.config
 
 make -j8
 make -j8 modules_install
